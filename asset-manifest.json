@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/student-score-analyzer/static/css/main.3812da6e.css",
+    "main.js": "/student-score-analyzer/static/js/main.cabe9dd8.js",
+    "static/js/453.910e7dee.chunk.js": "/student-score-analyzer/static/js/453.910e7dee.chunk.js",
+    "index.html": "/student-score-analyzer/index.html",
+    "main.3812da6e.css.map": "/student-score-analyzer/static/css/main.3812da6e.css.map",
+    "main.cabe9dd8.js.map": "/student-score-analyzer/static/js/main.cabe9dd8.js.map",
+    "453.910e7dee.chunk.js.map": "/student-score-analyzer/static/js/453.910e7dee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3812da6e.css",
+    "static/js/main.cabe9dd8.js"
+  ]
+}
