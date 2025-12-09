@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Clerk Authentication
+
+1. Copy your publishable key from Clerk (Dashboard → your app → API Keys → Frontend publishable key).  
+2. Create a `.env.local` file in the project root with:
+   ```
+   REACT_APP_CLERK_PUBLISHABLE_KEY=pk_test_bmF0aW9uYWwtamF5LTY4LmNsZXJrLmFjY291bnRzLmRldiQ
+   ```
+3. Run `npm start` as usual. Signed-out users are redirected to Clerk’s hosted sign-in page; signed-in users see the Student Score Analyzer.
+
 ## Available Scripts
 
 In the project directory, you can run:

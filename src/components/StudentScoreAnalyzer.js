@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, ReferenceLine, Area, ComposedChart } from 'recharts';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line, ReferenceLine, Area, ComposedChart } from 'recharts';
 import './StudentScoreAnalyzer.css';
 
 const StudentScoreAnalyzer = () => {
@@ -10,7 +10,7 @@ const StudentScoreAnalyzer = () => {
   const [cutoffScore, setCutoffScore] = useState(75);
 
   // Generate random scores with normal distribution
-  const generateScores = () => {
+  const generateScores = useCallback(() => {
     const newScores = [];
     for (let i = 0; i < numStudents; i++) {
       // Box-Muller transformation for normal distribution
@@ -24,7 +24,7 @@ const StudentScoreAnalyzer = () => {
       newScores.push(score);
     }
     setScores(newScores.sort((a, b) => a - b));
-  };
+  }, [numStudents, meanScore, stdDev]);
 
   // Calculate descriptive statistics
   const stats = useMemo(() => {
@@ -136,7 +136,7 @@ const StudentScoreAnalyzer = () => {
   // Generate initial data
   useEffect(() => {
     generateScores();
-  }, []);
+  }, [generateScores]);
 
   return (
     <div className="app-container">
