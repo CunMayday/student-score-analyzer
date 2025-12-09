@@ -2,7 +2,7 @@
 
 .app-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #e0f2fe 0%, #e8eaf6 100%);
+  background: linear-gradient(135deg, #f5f1e8 0%, #faf8f3 100%);
   padding: 24px;
 }
 
@@ -74,13 +74,13 @@
 
 .control-input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #CFB991;
+  box-shadow: 0 0 0 3px rgba(207, 185, 145, 0.2);
 }
 
 .generate-btn {
-  background: #3b82f6;
-  color: white;
+  background: #CFB991;
+  color: #000000;
   font-weight: 600;
   padding: 12px 24px;
   border: none;
@@ -91,8 +91,8 @@
 }
 
 .generate-btn:hover {
-  background: #2563eb;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  background: #C89933;
+  box-shadow: 0 4px 12px rgba(207, 185, 145, 0.4);
 }
 
 /* Content Grid */
@@ -177,7 +177,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #ef4444;
+  background: #000000;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -186,7 +186,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #ef4444;
+  background: #000000;
   cursor: pointer;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

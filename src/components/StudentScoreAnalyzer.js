@@ -266,7 +266,7 @@ const StudentScoreAnalyzer = () => {
                   <XAxis dataKey="range" />
                   <YAxis />
                   <Tooltip />
-                  <Bar dataKey="count" fill="#3b82f6" fillOpacity={0.7} />
+                  <Bar dataKey="count" fill="#CFB991" fillOpacity={0.7} />
                 </ComposedChart>
               </ResponsiveContainer>
             </div>
@@ -279,20 +279,20 @@ const StudentScoreAnalyzer = () => {
                   <XAxis dataKey="x" />
                   <YAxis />
                   <Tooltip />
-                  <Area 
-                    dataKey="y" 
-                    stroke="#8b5cf6" 
-                    fill="#8b5cf6" 
+                  <Area
+                    dataKey="y"
+                    stroke="#CFB991"
+                    fill="#CFB991"
                     fillOpacity={0.3}
                   />
-                  <Line 
-                    type="monotone" 
-                    dataKey="y" 
-                    stroke="#8b5cf6" 
+                  <Line
+                    type="monotone"
+                    dataKey="y"
+                    stroke="#CFB991"
                     strokeWidth={2}
                     dot={false}
                   />
-                  <ReferenceLine x={cutoffScore} stroke="#ef4444" strokeWidth={2} strokeDasharray="5 5" />
+                  <ReferenceLine x={cutoffScore} stroke="#000000" strokeWidth={2} strokeDasharray="5 5" />
                 </ComposedChart>
               </ResponsiveContainer>
             </div>
